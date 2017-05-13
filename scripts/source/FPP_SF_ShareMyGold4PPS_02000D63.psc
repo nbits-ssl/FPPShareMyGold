@@ -60,6 +60,7 @@ EndFunction
 
 Function payGold(Actor player, Int num, Actor Follower)
 	if (Follower)
+		Utility.Wait(0.5)
 		player.RemoveItem(Gold001, num, false, Follower)
 	endif
 EndFunction
